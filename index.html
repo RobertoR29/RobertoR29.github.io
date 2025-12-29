@@ -1,166 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roberto Reade | Portfolio</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f7f9fc;
-            color: #222;
-        }
-
-        header {
-            padding: 40px 20px;
-            text-align: center;
-            background: #ffffff;
-            border-bottom: 1px solid #eee;
-        }
-
-        header h1 {
-            font-size: 2.8rem;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            color: #555;
-        }
-
-        .section {
-            max-width: 900px;
-            margin: 60px auto;
-            padding: 0 20px;
-        }
-
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: #111;
-        }
-
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 20px;
-        }
-
-        .project-card {
-            background: #fff;
-            border: 1px solid #e5e5e5;
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        .project-card h3 {
-            margin-top: 0;
-        }
-
-        .project-card p {
-            color: #555;
-            font-size: 0.95rem;
-        }
-
-        .project-card a {
-            text-decoration: none;
-            color: #0066cc;
-            font-weight: bold;
-            display: inline-block;
-            margin-top: 10px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 40px 0;
-            background: #fff;
-            border-top: 1px solid #eee;
-            margin-top: 60px;
-        }
-
-        footer p {
-            margin: 5px 0;
-            color: #555;
-        }
-
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2.2rem;
-            }
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roberto Reade – Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
+<body>
+    <!-- Header -->
     <header>
         <h1>Roberto Reade</h1>
-        <p>Cybersecurity Student • Developer • Problem Solver</p>
+        <p>Cybersecurity • Information Security • Digital Forensics • Threat Analysis</p>
     </header>
 
-    <section class="section" id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a cybersecurity student with a strong interest in digital forensics, incident response, and 
-            secure system development. I enjoy tackling technical challenges, building practical security projects, 
-            and continuously expanding my skills in cyber defense and analysis.
-        </p>
+    <!-- About Section -->
+    <section id="about">
+        <img src="GHI-09.jpg" alt="Profile Photo" id="profile-pic">
+
+        <div>
+            <h2>About Me</h2>
+            <p>
+                I am a cybersecurity student specializing in cyber defense, threat detection,
+                reverse engineering, and secure system development. I enjoy solving complex
+                challenges, building technical projects, and continuously improving my skills
+                through hands-on work and real-world cybersecurity concepts.
+            </p>
+
+            <a href="Roberto_Reade_Resume_December_2025.pdf" class="button" target="_blank">
+                View Resume
+            </a>
+        </div>
     </section>
 
-    <section class="section" id="projects">
+    <!-- Projects Section -->
+    <section id="projects">
         <h2>Projects</h2>
 
-        <div class="projects-grid">
+        <div class="project-grid">
 
-            <div class="project-card">
+            <!-- Project 1 -->
+            <a href="https://github.com/RobertoR29/Cyber-Analytics-and-Machine-Learning" class="project-card" target="_blank">
                 <h3>Cyber Analytics & Machine Learning</h3>
-                <p>Security-focused data analytics and ML experiments using threat datasets.</p>
-                <a href="https://github.com/RobertoR29/Cyber-Analytics-and-Machine-Learning" target="_blank">View on GitHub</a>
-            </div>
+                <p>Cybersecurity-focused ML analysis, anomaly detection, and data-driven threat insights.</p>
+            </a>
 
-            <div class="project-card">
+            <!-- Project 2 -->
+            <a href="https://github.com/RobertoR29/Covert-Communication" class="project-card" target="_blank">
                 <h3>Covert Communication</h3>
-                <p>Techniques for covert channels and secure message passing.</p>
-                <a href="https://github.com/RobertoR29/Covert-Communication" target="_blank">View on GitHub</a>
-            </div>
+                <p>Exploring hidden communication channels and stealthy data transmission techniques.</p>
+            </a>
 
-            <div class="project-card">
+            <!-- Project 3 -->
+            <a href="https://github.com/RobertoR29/Cyber-Defense-Techniques" class="project-card" target="_blank">
                 <h3>Cyber Defense Techniques</h3>
-                <p>Various defensive strategies and security implementations.</p>
-                <a href="https://github.com/RobertoR29/Cyber-Defense-Techniques" target="_blank">View on GitHub</a>
-            </div>
+                <p>Hands-on defense simulations, mitigation strategies, and system hardening.</p>
+            </a>
 
-            <div class="project-card">
-                <h3>Info Sec & Risk Management</h3>
-                <p>Documentation and practical exercises in risk assessment and mitigation.</p>
-                <a href="https://github.com/RobertoR29/Info-Sec-and-Risk-Management" target="_blank">View on GitHub</a>
-            </div>
+            <!-- Project 4 -->
+            <a href="https://github.com/RobertoR29/Info-Sec-and-Risk-Management" class="project-card" target="_blank">
+                <h3>Information Security & Risk Management</h3>
+                <p>Risk assessment, policy development, and secure system lifecycle analysis.</p>
+            </a>
 
-            <div class="project-card">
+            <!-- Project 5 -->
+            <a href="https://github.com/RobertoR29/Rush-Hour" class="project-card" target="_blank">
                 <h3>Rush Hour Solver</h3>
-                <p>Algorithmic problem-solving project for the Rush Hour puzzle game.</p>
-                <a href="https://github.com/RobertoR29/Rush-Hour" target="_blank">View on GitHub</a>
-            </div>
+                <p>Algorithmic puzzle solver demonstrating strategic problem-solving and logic design.</p>
+            </a>
 
-            <div class="project-card">
+            <!-- Project 6 -->
+            <a href="https://github.com/RobertoR29/Reverse-Engineering-Fundamentals" class="project-card" target="_blank">
                 <h3>Reverse Engineering Fundamentals</h3>
-                <p>Introductory reverse engineering concepts and binary analysis.</p>
-                <a href="https://github.com/RobertoR29/Reverse-Engineering-Fundamentals" target="_blank">View on GitHub</a>
-            </div>
+                <p>Binary analysis, disassembly, and understanding low-level software behavior.</p>
+            </a>
 
-            <div class="project-card">
-                <h3>Networking & Web App Security</h3>
-                <p>Network configuration, packet analysis, and web security concepts.</p>
-                <a href="https://github.com/RobertoR29/Networking-and-Web-Application-Security" target="_blank">View on GitHub</a>
-            </div>
+            <!-- Project 7 -->
+            <a href="https://github.com/RobertoR29/Networking-and-Web-Application-Security" class="project-card" target="_blank">
+                <h3>Networking & Web Application Security</h3>
+                <p>Network analysis, secure protocols, and real-world web vulnerability testing.</p>
+            </a>
 
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <p>© 2025 Roberto Reade</p>
-        <p>Contact: your-email@example.com</p>
     </footer>
-
 </body>
 </html>
