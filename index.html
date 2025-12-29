@@ -1,92 +1,232 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Roberto Reade – Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Angelo Reade | Robotics Engineering</title>
+  <meta name="description" content="Angelo Reade — Robotics Engineering student at Worcester Polytechnic Institute. Portfolio of robotics and CAD projects." />
+
+  <style>
+    :root {
+      --text:#0f172a;
+      --muted:#475569;
+      --link:#2563eb;
+      --border:#e2e8f0;
+      --bg:#ffffff;
+      --chip:#f1f5f9;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 48px 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      flex-wrap: wrap;
+      margin-bottom: 36px;
+    }
+
+    .profile-pic {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--border);
+    }
+
+    h1 {
+      font-size: 42px;
+      line-height: 1.15;
+      margin: 0 0 8px;
+    }
+
+    .tagline {
+      margin: 0 0 14px;
+      color: var(--muted);
+      max-width: 65ch;
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 16px;
+      text-decoration: none;
+      color: var(--link);
+      font-weight: 600;
+    }
+
+    .section-title {
+      font-size: 22px;
+      margin: 32px 0 12px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+      background: #fff;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    .card p {
+      margin: 0 0 12px;
+      color: var(--muted);
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 14px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .chip {
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--chip);
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+
+    .actions a {
+      text-decoration: none;
+      color: var(--link);
+      font-weight: 600;
+      margin-right: 10px;
+      white-space: nowrap;
+    }
+
+    footer {
+      margin-top: 44px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
 </head>
 
 <body>
-    <!-- Header -->
+  <div class="wrap">
+
+    <!-- HEADER -->
     <header>
-        <h1>Roberto Reade</h1>
-        <p>Cybersecurity • Information Security • Digital Forensics • Threat Analysis</p>
+      <img
+        src="angeloreadeprofilepicture.jpeg"
+        alt="Photo of Angelo Reade"
+        class="profile-pic"
+      />
+
+      <div>
+        <h1>Angelo Reade</h1>
+        <p class="tagline">
+          Robotics Engineering student at Worcester Polytechnic Institute (BS/MS).
+          Focused on robotics systems, CAD-driven mechanical design, and clean technical documentation.
+        </p>
+        <div class="links">
+          <a href="https://github.com/AngeloReade-WPI">GitHub</a>
+          <a href="#" target="_blank">Resume</a>
+          <a href="mailto:your-email@wpi.edu">Email</a>
+        </div>
+      </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about">
-        <img src="GHI-09.jpg" alt="Profile Photo" id="profile-pic">
+    <!-- PROJECTS -->
+    <h2 class="section-title">Projects</h2>
+    <div class="grid">
 
-        <div>
-            <h2>About Me</h2>
-            <p>
-                I am a cybersecurity student specializing in cyber defense, threat detection,
-                reverse engineering, and secure system development. I enjoy solving complex
-                challenges, building technical projects, and continuously improving my skills
-                through hands-on work and real-world cybersecurity concepts.
-            </p>
-
-            <a href="Roberto_Reade_Resume_December_2025.pdf" class="button" target="_blank">
-                View Resume
-            </a>
+      <article class="card">
+        <h3>Fruit-Picking Robot</h3>
+        <p>
+          Robotic system designed for automated fruit collection, including mechanical design,
+          integration, and control logic.
+        </p>
+        <ul class="chips">
+          <li class="chip">Robotics</li>
+          <li class="chip">CAD</li>
+          <li class="chip">Controls</li>
+        </ul>
+        <div class="actions">
+          <a href="#">Project page</a>
+          <a href="#">Repository</a>
         </div>
-    </section>
+      </article>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-
-        <div class="project-grid">
-
-            <!-- Project 1 -->
-            <a href="https://github.com/RobertoR29/Cyber-Analytics-and-Machine-Learning" class="project-card" target="_blank">
-                <h3>Cyber Analytics & Machine Learning</h3>
-                <p>Cybersecurity-focused ML analysis, anomaly detection, and data-driven threat insights.</p>
-            </a>
-
-            <!-- Project 2 -->
-            <a href="https://github.com/RobertoR29/Covert-Communication" class="project-card" target="_blank">
-                <h3>Covert Communication</h3>
-                <p>Exploring hidden communication channels and stealthy data transmission techniques.</p>
-            </a>
-
-            <!-- Project 3 -->
-            <a href="https://github.com/RobertoR29/Cyber-Defense-Techniques" class="project-card" target="_blank">
-                <h3>Cyber Defense Techniques</h3>
-                <p>Hands-on defense simulations, mitigation strategies, and system hardening.</p>
-            </a>
-
-            <!-- Project 4 -->
-            <a href="https://github.com/RobertoR29/Info-Sec-and-Risk-Management" class="project-card" target="_blank">
-                <h3>Information Security & Risk Management</h3>
-                <p>Risk assessment, policy development, and secure system lifecycle analysis.</p>
-            </a>
-
-            <!-- Project 5 -->
-            <a href="https://github.com/RobertoR29/Rush-Hour" class="project-card" target="_blank">
-                <h3>Rush Hour Solver</h3>
-                <p>Algorithmic puzzle solver demonstrating strategic problem-solving and logic design.</p>
-            </a>
-
-            <!-- Project 6 -->
-            <a href="https://github.com/RobertoR29/Reverse-Engineering-Fundamentals" class="project-card" target="_blank">
-                <h3>Reverse Engineering Fundamentals</h3>
-                <p>Binary analysis, disassembly, and understanding low-level software behavior.</p>
-            </a>
-
-            <!-- Project 7 -->
-            <a href="https://github.com/RobertoR29/Networking-and-Web-Application-Security" class="project-card" target="_blank">
-                <h3>Networking & Web Application Security</h3>
-                <p>Network analysis, secure protocols, and real-world web vulnerability testing.</p>
-            </a>
-
+      <article class="card">
+        <h3>Hole Puncher CAD Assembly</h3>
+        <p>
+          Fully modeled hole puncher assembly with moving components, focusing on manufacturability
+          and clear part relationships.
+        </p>
+        <ul class="chips">
+          <li class="chip">CAD</li>
+          <li class="chip">Assembly</li>
+          <li class="chip">Mechanism Design</li>
+        </ul>
+        <div class="actions">
+          <a href="#">Project page</a>
+          <a href="#">Repository</a>
         </div>
-    </section>
+      </article>
 
-    <!-- Footer -->
+      <article class="card">
+        <h3>Remote-Control Line-Following Robot</h3>
+        <p>
+          Mobile robot capable of both remote control and autonomous line following using onboard
+          sensing and programmed control logic.
+        </p>
+        <ul class="chips">
+          <li class="chip">Robotics</li>
+          <li class="chip">Sensors</li>
+          <li class="chip">Programming</li>
+        </ul>
+        <div class="actions">
+          <a href="#">Project page</a>
+          <a href="#">Repository</a>
+        </div>
+      </article>
+
+    </div>
+
     <footer>
-        <p>© 2025 Roberto Reade</p>
+      © <span id="year"></span> Angelo Reade • Built with GitHub Pages
     </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
